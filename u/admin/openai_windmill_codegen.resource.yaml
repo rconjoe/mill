@@ -1,0 +1,4 @@
+description: null
+value:
+  api_key: '$var:u/admin/openai_windmill_codegen'
+resource_type: openai
