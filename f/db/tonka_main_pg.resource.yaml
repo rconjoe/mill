@@ -1,6 +1,6 @@
 description: tonka-main postgres on railway
 value:
-  dbname: railway
+  dbname: merch_store
   host: switchyard.proxy.rlwy.net
   password: '$var:f/db/tonka_main_pg'
   port: 34792
