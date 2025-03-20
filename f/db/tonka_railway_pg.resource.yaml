@@ -1,0 +1,9 @@
+description: use this as default for management and stuff
+value:
+  dbname: railway
+  host: switchyard.proxy.rlwy.net
+  password: '$var:f/db/tonka_railway_pg'
+  port: 34792
+  root_certificate_pem: ''
+  user: postgres
+resource_type: postgresql

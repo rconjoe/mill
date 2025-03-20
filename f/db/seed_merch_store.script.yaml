@@ -1,0 +1,38 @@
+summary: Seed merch_store DB
+description: ''
+lock: ''
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    $1:
+      type: string
+      description: ''
+      default: null
+      originalType: string
+    $12:
+      type: string
+      description: ''
+      default: null
+      originalType: string
+    $2:
+      type: string
+      description: ''
+      default: null
+      originalType: string
+    $75:
+      type: string
+      description: ''
+      default: null
+      originalType: string
+    database:
+      type: object
+      description: ''
+      format: resource-postgresql
+  required:
+    - database
+    - $1
+    - $2
+    - $12
+    - $75

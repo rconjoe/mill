@@ -1,0 +1,4 @@
+description: ''
+value:
+  token: '$var:u/root/plentiful_github'
+resource_type: github
