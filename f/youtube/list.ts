@@ -1,6 +1,6 @@
+import * as wmill from "windmill-client"
+
 export async function main(
-  api_key: string,
-  channel_id: string,
   part: "snippet",
   maxResults: number,
   type: "video" | "channel" | "playlist",
@@ -11,6 +11,9 @@ export async function main(
   if (maxResults < 0 || maxResults > 50) {
     throw new Error("maxResults must be between 0 and 50");
   }
+
+  const api_key = await wmill.getVariable("f/youtube/api_key");
+  const channel_id = await wmill.getVariable("f/youtube/channel_id");
 
   const headers = {
     "Accept": "application/json"

@@ -1,5 +1,7 @@
 summary: Seed merch_store DB
-description: ''
+description: >-
+  windmill doesn't like to run this script but it is backed up in the git repo
+  so you can just run it locally with `pgsql`
 lock: ''
 kind: script
 schema:

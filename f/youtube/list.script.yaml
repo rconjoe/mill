@@ -17,16 +17,6 @@ schema:
         - channel
         - playlist
       originalType: enum
-    api_key:
-      type: string
-      description: ''
-      default: null
-      originalType: string
-    channel_id:
-      type: string
-      description: ''
-      default: null
-      originalType: string
     maxResults:
       type: number
       description: ''
@@ -61,8 +51,6 @@ schema:
       default: null
       originalType: string
   required:
-    - api_key
-    - channel_id
     - part
     - maxResults
     - type
