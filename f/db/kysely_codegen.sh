@@ -19,5 +19,4 @@ echo "DATABASE_URL=$DATABASE_URL" > .env
 npx kysely-codegen --out-file ./db.d.ts
 
 cat ./db.d.ts
-cat ./db.d.ts > ./result.out
 

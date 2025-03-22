@@ -2,7 +2,7 @@ summary: Youtube Search API
 description: >-
   Parameterized execution of HTTP requests to
   https://www.googleapis.com/youtube/v3/search
-lock: '!inline f/youtube/list.script.lock'
+lock: '!inline f/youtube/search.script.lock'
 kind: script
 schema:
   $schema: 'https://json-schema.org/draft/2020-12/schema'

@@ -1,5 +1,8 @@
 locks:
+  f/db/kysely_codegen: 0eb235f9850c3893e527eb0455b25bd10dbd5ccc037c85bca5c742d5e3d0f572
   f/db/seed_merch_store: 58482e00a7ef71885be21018041ce1d39723b67cdb29dab2cce7f79181f3f87b
   f/youtube/list: 08c2776e59fcad6dc438087dfe5823a1212ee4ed90ea54eccf60daf5640c5cdf
+  f/youtube/search: 3c44d761a0c673a5b02af0e4a018e4a93220ff81ff269c20a24097c68d3bbf93
   u/root/diversified_script: fbd54bb3b034272c64185a5179c30a573bba50bcad2edee1955f2c87669ccf98
+  u/root/git_sync_workspace: 4d7f19276a1beb9b61008aaa37e3ae656cbe1ad9a703e148721304eb69e083fe
   u/root/supporting_script: ccded532fa4e19ee74b5910f0c1cd38b8d7d587bd20e878e9de452fe05e4fb03
