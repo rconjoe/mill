@@ -10,8 +10,8 @@ date=$(date +%Y-%m-%d)
 
 npm i -g windmill-cli
 
-git clone https://rconjoe:$token@github.com/rconjoe/mill.trog.codes.git
-cd mill.trog.codes
+git clone https://rconjoe:$token@github.com/rconjoe/mill.git
+cd mill
 
 git config user.name "rconjoe"
 git config user.email "root@trog.codes"
@@ -26,6 +26,6 @@ git add .
 git commit -m "sync $date"
 
 # Push changes
-git push https://rconjoe:$token@github.com/rconjoe/mill.trog.codes.git master
+git push https://rconjoe:$token@github.com/rconjoe/mill.git master
 
 echo "Script finished."
