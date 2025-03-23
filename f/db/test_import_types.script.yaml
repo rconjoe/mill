@@ -1,7 +1,8 @@
-summary: kysely-codegen + sync
+summary: test import types
 description: ''
-lock: ''
+lock: '!inline f/db/test_import_types.script.lock'
 kind: script
+no_main_func: true
 schema:
   $schema: 'https://json-schema.org/draft/2020-12/schema'
   type: object

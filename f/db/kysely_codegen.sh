@@ -1,7 +1,6 @@
 # shellcheck shell=bash
 # the last line of the stdout is the return value
 # unless you write json to './result.json' or a string to './result.out'
-# shellcheck shell=bash
 
 mkdir kysely
 
