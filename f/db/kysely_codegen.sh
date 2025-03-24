@@ -15,7 +15,4 @@ DATABASE_URL=$(curl -s -H "Authorization: Bearer $WM_TOKEN" \
 
 echo "DATABASE_URL=$DATABASE_URL" > .env
 
-npx kysely-codegen --out-file ./db.d.ts
-
-cat ./db.d.ts
-
+npx kysely-codegen --out-file 
