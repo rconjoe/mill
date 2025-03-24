@@ -1,18 +1,35 @@
 # shellcheck shell=bash
-# the last line of the stdout is the return value
-# unless you write json to './result.json' or a string to './result.out'
 
-mkdir kysely
+# Set -e to exit immediately if a command exits with a non-zero status
+set -e
 
-cd kysely
+# arguments of the form X="$I" are parsed as parameters X of type string
+gh_token=$(curl -s -H "Authorization: Bearer $WM_TOKEN" \
+  "$BASE_INTERNAL_URL/api/w/$WM_WORKSPACE/variables/get_value/u/root/plentiful_github" | jq -r .)
 
-npm init -y
-npm install -D kysely-codegen
-npm install kysely pg
+date=$(date +%Y-%m-%d)
 
-DATABASE_URL=$(curl -s -H "Authorization: Bearer $WM_TOKEN" \
+npm i -g windmill-cli kysely kysely-codegen pg
+
+# clone the mill repo
+git clone https://rconjoe:$gh_token@github.com/rconjoe/mill.git
+cd mill
+git config user.name "rconjoe"
+git config user.email "root@trog.codes"
+
+wmill workspace add tonka tonka https://mill.trog.codes --token "$WM_TOKEN"
+
+wmill sync pull --yes 
+
+database_url=$(curl -s -H "Authorization: Bearer $WM_TOKEN" \
   "$BASE_INTERNAL_URL/api/w/$WM_WORKSPACE/variables/get_value/f/db/tonka_railway_pg" | jq -r .)
+echo "DATABASE_URL=$database_url" > .env
+cat .env
 
-echo "DATABASE_URL=$DATABASE_URL" > .env
+kysely-codegen --out-file ./f/db/types.ts 
 
-npx kysely-codegen --out-file 
+wmill sync push --yes 
+
+git add .
+git commit -m "db model update sync $datef"
+

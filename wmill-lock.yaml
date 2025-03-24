@@ -1,5 +1,5 @@
 locks:
-  f/db/kysely_codegen: 5f36e44b09dd51d711693e6abc20168d25dd7227df085d41c23c9014f95f2445
+  f/db/kysely_codegen: 21d982bfb7d771c116865b45f3e7b09f3801864753c559eb0c6ae78a994955bc
   f/db/seed_merch_store: 58482e00a7ef71885be21018041ce1d39723b67cdb29dab2cce7f79181f3f87b
   f/db/test_export_types: 7a88284329551e5bf5f270a1630032f4ae1c186ceebf1e82e6440825a6e445c5
   f/db/test_import_types: ff49d8c68eefed4ae05571e83c2a174fe3c46eb2eaffdfe640394b1ef58694c4
@@ -7,6 +7,6 @@ locks:
   f/youtube/list: 08c2776e59fcad6dc438087dfe5823a1212ee4ed90ea54eccf60daf5640c5cdf
   f/youtube/search: 3c44d761a0c673a5b02af0e4a018e4a93220ff81ff269c20a24097c68d3bbf93
   u/root/diversified_script: fbd54bb3b034272c64185a5179c30a573bba50bcad2edee1955f2c87669ccf98
-  u/root/git_sync_workspace: 90d9db8f1101629abdee8cf1062e025683d1a53f18a1f34af0cce31d56823898
+  u/root/git_sync_workspace: 79f8f9a7cf5fd35ca1261b5e005d5d1c49d48488ec48e53fe7acdca88815699c
   u/root/supporting_script: ccded532fa4e19ee74b5910f0c1cd38b8d7d587bd20e878e9de452fe05e4fb03
   u/root/winning_script: 3dd5f5d8a9de226f86d967c9d9f191e1d018ab6a46482998e15332baf01c2988
