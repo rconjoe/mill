@@ -1,0 +1,23 @@
+summary: ''
+description: ''
+lock: '!inline f/db/findProducts.script.lock'
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    name:
+      type: string
+      description: ''
+      default: null
+      originalType: string
+    is_active:
+      type: boolean
+      description: ''
+      default: null
+    product_id:
+      type: number
+      description: ''
+      default: null
+  required:
+    - is_active

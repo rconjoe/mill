@@ -1,4 +1,5 @@
 locks:
+  f/db/findProducts: 33448f4ab38efe018feea32a1d07c64e4005ea70adaf655e06cf6e6b70209429
   f/db/kysely_codegen: 4f21d66b89774408ca069704d09ee3faf96e688b5b78a96b8d0f8e2d6e1b51c6
   f/db/seed_merch_store: 58482e00a7ef71885be21018041ce1d39723b67cdb29dab2cce7f79181f3f87b
   f/db/test_export_types: 7a88284329551e5bf5f270a1630032f4ae1c186ceebf1e82e6440825a6e445c5

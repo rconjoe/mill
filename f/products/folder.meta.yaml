@@ -1,0 +1,6 @@
+summary: null
+display_name: products
+extra_perms:
+  u/root: true
+owners:
+  - u/root
