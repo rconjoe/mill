@@ -27,6 +27,13 @@ export interface Inventory {
   quantity: Generated<number>;
 }
 
+export interface Linktree {
+  id: Generated<number>;
+  image_uri: string | null;
+  subtitle: string;
+  title: string;
+}
+
 export interface Products {
   category_id: number | null;
   created_at: Generated<Timestamp>;
@@ -52,6 +59,7 @@ export interface ProductVariants {
 export interface DB {
   categories: Categories;
   inventory: Inventory;
+  linktree: Linktree;
   product_variants: ProductVariants;
   products: Products;
 }
