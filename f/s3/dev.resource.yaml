@@ -1,0 +1,10 @@
+description: bucket.bigtonk.com/dev
+value:
+  accessKey: '$var:f/s3/dev_access_key'
+  bucket: dev
+  endPoint: bucket.bigtonk.com
+  pathStyle: true
+  region: auto
+  secretKey: '$var:f/s3/dev_secret_key'
+  useSSL: true
+resource_type: s3
